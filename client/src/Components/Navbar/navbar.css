@@ -31,7 +31,7 @@ ul p {
 
 .search {
   position: relative;
-  left: 36%;
+  left: 30%;
   margin-top: 15px;
 }
 
@@ -52,7 +52,7 @@ ul p {
 
 .auth {
   position: relative;
-  left: 37%;
+  left: 31%;
   margin-top: 1.5rem;
   display: flex;
   justify-content: space-around;
@@ -87,7 +87,6 @@ ul p {
   justify-content: center;
   margin-top: 26px;
   height: 30px;
-  margin-left: 75px;
   font-weight: 500;
   display: flex;
 }
@@ -116,7 +115,7 @@ ul p {
   background-color: #078edd;
   border: none;
   width: 70px;
-  margin-left: 43rem;
+  margin-left: 39rem;
   height: 25px;
   font-size: 16px;
   margin-top: 18px;
@@ -154,7 +153,7 @@ ul p {
 
 .Profile {
   top: 0rem;
-  left: 61%;
+  left: 57%;
   position: absolute;
 }
 
