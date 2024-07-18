@@ -1,0 +1,11 @@
+{
+  "common": {
+    "phoneNumber": "电话号码",
+    "otpSent": "OTP已发送至{{type}}",
+    "enterOtp": "输入OTP",
+    "verify": "验证",
+    "failedToSendOtp": "无法发送OTP",
+    "invalidOtp": "无效的OTP",
+    "verifying": "正在验证..."
+  }
+}

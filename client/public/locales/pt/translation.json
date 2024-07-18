@@ -1,0 +1,12 @@
+{
+    "common": {
+      "phoneNumber": "Número de telefone",
+      "otpSent": "OTP enviado para {{type}}",
+      "enterOtp": "Digite o OTP",
+      "verify": "Verificar",
+      "failedToSendOtp": "Falha ao enviar OTP",
+      "invalidOtp": "OTP inválido",
+      "verifying": "Verificando..."
+    }
+  }
+  

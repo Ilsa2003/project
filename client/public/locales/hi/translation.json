@@ -1,0 +1,11 @@
+{
+  "common": {
+    "phoneNumber": "फोन नंबर",
+    "otpSent": "OTP {{type}} पर भेजा गया",
+    "enterOtp": "OTP दर्ज करें",
+    "verify": "सत्यापित करें",
+    "failedToSendOtp": "OTP भेजने में विफल",
+    "invalidOtp": "अमान्य OTP",
+    "verifying": "सत्यापित हो रहा है..."
+  }
+}

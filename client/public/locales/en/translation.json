@@ -1,0 +1,7 @@
+{
+  "welcome": "Welcome",
+  "otpSent": "OTP has been sent to your {{type}}",
+  "failedToSendOtp": "Failed to send OTP",
+  "email": "Email",
+  "phoneNumber": "phone number"
+}
