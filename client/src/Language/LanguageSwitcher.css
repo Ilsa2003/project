@@ -8,10 +8,17 @@
   }
   
   .language-switcher input {
-    width: 200px;
     margin-bottom: 10px;
   }
   
+  .switch {
+    border: 2px solid;
+    margin-top: 5rem;
+    padding: 25px;
+    margin-bottom: 6rem;
+}
+
+
   /* Responsive Styles */
   @media (max-width: 768px) {
     .language-switcher {
@@ -19,7 +26,7 @@
     }
   
     .language-switcher input {
-      width: 80%;
+      width: 100%;
     }
   }
   

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import logo from "../../Assets/logo.png"
+import Navbar from './Navbar'
 import './sidebar.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
@@ -63,6 +64,7 @@ function Sidebar() {
           }
           <Link to="/internship">Internships </Link>
           <Link to="/Jobs">Jobs </Link>
+          <Link to="/Lang">languages</Link>
           <Link to={"/"} className='small'>Contact Us</Link>
           <hr />
           {user ? (

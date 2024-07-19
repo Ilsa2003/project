@@ -20,6 +20,8 @@ import Postinternships from './Admin/Postinternships';
 import DetailApplication from './Applications/DetailApplication';
 import UserApplication from './profile/UserApplication';
 import UserApplicationDetail from './Applications/DetailApplicationUser';
+import LanguageSwitcher from './Language/LanguageSwitcher';
+import i18n from './i18n';
 
 function App() {
   const user = useSelector(selectUser);
@@ -48,6 +50,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/register' element={<Register />} />
         <Route path='/internship' element={<Intern />} />
+        <Route path='/Lang' element={<LanguageSwitcher />} />
         <Route path='/Jobs' element={<JobAvl />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/detailjob' element={<JobDetail />} />

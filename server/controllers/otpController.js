@@ -34,8 +34,6 @@ const sendMobileOTP = async (phone) => {
   const otpEntry = new Otp({ phone, otp });
   await otpEntry.save();
   console.log(`Sending OTP ${otp} to mobile ${phone}`);
-  // Logic to send OTP to mobile (not implemented in the provided code)
-  // Use a service like Twilio or another SMS gateway to send OTP via SMS
 };
 
 const verifyOtp = async (email, phone, otp) => {

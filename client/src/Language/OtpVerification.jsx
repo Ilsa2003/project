@@ -1,27 +1,22 @@
-// src/Components/OtpVerification.jsx
-import React, { useState } from 'react';
-import '../Language/OtpVerification.css'
-function OtpVerification({ onOtpVerified, contact }) {
-  const [otp, setOtp] = useState('');
+import React from 'react';
+import '../Language/OtpVerification.css';
 
+function OtpVerification({ onOtpVerified, contact, otp, setOtp }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       onOtpVerified();
     } catch (error) {
-      alert('Invalid OTP');
+      alert(error);
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Enter OTP"
-        value={otp}
-        onChange={(e) => setOtp(e.target.value)}
-      />
-      <button type="submit">Verify</button>
+      <div className="sbt">
+        <input type="text" placeholder="Enter OTP" value={otp} onChange={(e) => setOtp(e.target.value)}/>
+        <button type="submit">Submit OTP</button>
+      </div>
     </form>
   );
 }
