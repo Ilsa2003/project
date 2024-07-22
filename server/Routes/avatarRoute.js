@@ -38,14 +38,14 @@ router.post('/upload', (req, res) => {
     upload(req, res, async (err) => {
         if (err) {
             console.error(err);
-            res.status(400).json({ msg: err });
+            res.status(400).json({ mssg: err });
         } else {
             if (req.file === undefined) {
-                res.status(400).json({ msg: 'No file selected!' });
+                res.status(400).json({ mssg: 'No file selected!' });
             } else {
                 const avatarUrl = `uploads/${req.file.filename}`;
                 res.status(200).json({
-                    msg: 'File uploaded!',
+                    mssg: 'File uploaded!',
                     file: avatarUrl
                 });
             }

@@ -1,12 +1,19 @@
 const mongoose = require('mongoose');
-const url = `mongodb+srv://admin:admin@cluster0.1r6ydvs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+require('dotenv').config();
 
-module.exports.connect = async () => {
-  try {
-    await mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
-    console.log("Database is connected");
-  } catch (err) {
+const DATABASE = process.env.DATABASEURL;
+const url = DATABASE;
+
+const connect = () => {
+  return mongoose.connect(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }).then(() => {
+    console.log("Database Is Connected");
+  }).catch((err) => {
     console.error('Database connection error:', err);
-    throw err;
-  }
+    throw err; 
+  });
 };
+
+module.exports = { connect };

@@ -27,6 +27,7 @@
     "react-toastify": "^10.0.5",
     "strip-comments": "^2.0.1",
     "ua-parser-js": "^1.0.38",
+    "user-agent": "^1.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
